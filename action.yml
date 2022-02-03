@@ -10,6 +10,9 @@ inputs:
     description: format of output document - pdf, html or tex
     required: true
     default: pdf
+  dependencies:
+    description: comma-separated R packages to be installed
+    required: false
 outputs:
   output_file: 
     description: Output document defaults as the name of the rmarkdown file with the output format
@@ -19,6 +22,7 @@ runs:
   args:
     - ${{ inputs.input_file }}
     - ${{ inputs.output_format }}
+    - ${{ inputs.dependencies }}
 branding:
   icon: book
   color: green
