@@ -8,8 +8,7 @@ inputs:
     required: true
   output_format:
     description: format of output document - pdf, html or tex
-    required: true
-    default: pdf
+    required: false
   dependencies:
     description: comma-separated R packages to be installed
     required: false

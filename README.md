@@ -7,7 +7,7 @@ Github action to render documents using rmarkdown. Uses `rocker/r-rmd` docker im
 ## Inputs
 
 * `input_file`: path or name of input file, all with respect to root directory of the repo (e.g: `my_doc.Rmd`, `path/to/my_doc.Rmd`)
-* `output_format`: (defaults to `pdf_document`), options are: `word_document`, `html_document` and `pdf_document`.
+* `output_format`: relies on YAML definition if blank, options are: `word_document`, `html_document` and `pdf_document`.
 * `dependencies`: comma-separated R packages to be installed (e.g.: `shiny,stevetemplates`)
 
 ## Outputs 
